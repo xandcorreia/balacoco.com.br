@@ -1,0 +1,8 @@
+
+RewriteEngine on
+
+RewriteOptions inherit
+RewriteCond %{HTTP_HOST} ^balacoco\.com\.br$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.balacoco\.com\.br$
+RewriteRule ^/?$ "https\:\/\/balacoco\.com\.br\/index\.html" [R=301,L]
+
